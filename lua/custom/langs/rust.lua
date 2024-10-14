@@ -56,13 +56,6 @@ return {
 						vim.keymap.set(mode, keys, func, { buffer = bufnr, desc = "LSP: " .. desc })
 					end
 
-					-- vim.keymap.set("n", "<leader>ca", function()
-					-- 	vim.cmd.RustLsp("codeAction")
-					-- end, { desc = "Code Action", buffer = bufnr })
-					-- vim.keymap.set("n", "<leader>dr", function()
-					-- 	vim.cmd.RustLsp("debuggables")
-					-- end, { desc = "Rust Debuggables", buffer = bufnr })
-
 					map("gd", require("telescope.builtin").lsp_definitions, "[G]oto [D]efinition")
 
 					-- Find references for the word under your cursor.
