@@ -63,7 +63,6 @@ return {
 					-- 	vim.cmd.RustLsp("debuggables")
 					-- end, { desc = "Rust Debuggables", buffer = bufnr })
 
-
 					map("gd", require("telescope.builtin").lsp_definitions, "[G]oto [D]efinition")
 
 					-- Find references for the word under your cursor.

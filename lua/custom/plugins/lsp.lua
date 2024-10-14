@@ -26,37 +26,7 @@ return {
 			-- Allows extra capabilities provided by nvim-cmp
 			"hrsh7th/cmp-nvim-lsp",
 		},
-		keys = {
-			{
-				"]e",
-				function()
-					vim.diagnostic.jump({ count = 1, float = true, severity = vim.diagnostic.severity.ERROR })
-				end,
-				desc = "Go to next error",
-			},
-			{
-				"[e",
-				function()
-					vim.diagnostic.jump({ count = -1, float = true, severity = vim.diagnostic.severity.ERROR })
-				end,
-				desc = "Go to prev error",
-			},
-			{
-				
-				"]w",
-				function()
-					vim.diagnostic.jump({ count = 1, float = true, severity = vim.diagnostic.severity.WARN })
-				end,
-				desc = "Go to next warning",
-			},
-			{
-				"[w",
-				function()
-					vim.diagnostic.jump({ count = -1, float = true, severity = vim.diagnostic.severity.WARN })
-				end,
-				desc = "Go to prev warning",
-			},
-		},
+
 		config = function()
 			--  This function gets run when an LSP attaches to a particular buffer.
 			--    That is to say, every time a new file is opened that is associated with
