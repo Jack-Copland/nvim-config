@@ -1,6 +1,7 @@
 return {
 	{
 		"nvim-lspconfig",
+		lazy = false,
 		keys = {
 			{
 				"]w",
